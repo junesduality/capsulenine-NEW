@@ -2,6 +2,10 @@ body {
   overflow-x: hidden;
 }
 
+:root {
+  --bg-black: black;
+}
+
 .navbar .nav-link {
   font-size: 1.3rem;
   padding-left: 1rem;
@@ -23,22 +27,23 @@ body {
 }
 
 .carousel-image-1 {
-  background: url('../img/oil-bg1.jpg');
+  background: url("../img/oil-bg1.jpg");
   background-size: cover;
 }
 .carousel-image-2 {
-  background: url('../img/oil-bg2.jpg');
+  background: url("../img/oil-bg2.jpg");
   background-size: cover;
 }
 .carousel-image-3 {
-  background: url('../img/oil-bg3.jpg');
+  background: url("../img/oil-bg3.jpg");
   background-size: cover;
 }
 
 #motto-banner {
   position: relative;
   min-height: 160px;
-  background: url('/img/oil-bg1.jpg');
+  background: url("/img/oil-bg1.jpg");
+  background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   text-align: center;
@@ -46,7 +51,7 @@ body {
 }
 
 #motto-banner h1 {
-  font-weight: 700;
+  font-weight: 600;
 }
 #motto-banner h1 span.red-text {
   color: red;
@@ -74,11 +79,12 @@ body {
 
 #gallery {
   border-bottom: solid 5px black;
+  background-color: var(--bg-black);
 }
 
 #page-header {
   height: 200px;
-  background: url('/img/oil-bg2.jpg');
+  background: url("/img/oil-bg2.jpg");
   background-position: 0 -360px;
   background-attachment: fixed;
   color: white;
@@ -87,7 +93,4 @@ body {
 
 #about-footer {
   border-top: black 5px solid;
-}
-.about-img {
-  margin-top: -50px;
 }
